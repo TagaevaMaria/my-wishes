@@ -47,7 +47,7 @@ class ScreenGosha extends StatelessWidget {
                   child: HookanSevenWidget(data: data),
                 ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(bottom: 10),
                 child: YourHookah(),
               ),
