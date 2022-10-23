@@ -7,7 +7,6 @@ class MainScreenWidgetModel extends ChangeNotifier {
   ///переключение по экранам
   int selectedIndex = 1;
   onItemTap(int index) {
-    print(index);
     selectedIndex = index;
     notifyListeners();
   }
