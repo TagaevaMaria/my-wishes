@@ -13,7 +13,7 @@ final data = GoshModel(
 );
 
 class ScreenGosha extends StatelessWidget {
-  const ScreenGosha({Key? key}) : super(key: key);
+  ScreenGosha({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

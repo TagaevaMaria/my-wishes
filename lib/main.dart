@@ -23,7 +23,7 @@ class App extends StatelessWidget {
         MainNavigationRoutsName.Enter: (context) => const Enter(),
         MainNavigationRoutsName.MainScreen: (context) => const MainScreen(),
         MainNavigationRoutsName.NotesWidget: (context) => const NotesWidget(),
-        MainNavigationRoutsName.ScreenGosha: (context) => const ScreenGosha(),
+        MainNavigationRoutsName.ScreenGosha: (context) => ScreenGosha(),
         MainNavigationRoutsName.AddFotoWidget: (context) =>
             const AddFotoWidget(),
       },
