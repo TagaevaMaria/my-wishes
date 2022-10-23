@@ -5,7 +5,7 @@ import '../widget/share.dart';
 
 class MainScreenWidgetModel extends ChangeNotifier {
   ///переключение по экранам
-  int selectedIndex = 1;
+  int selectedIndex = 2;
   onItemTap(int index) {
     selectedIndex = index;
     notifyListeners();
