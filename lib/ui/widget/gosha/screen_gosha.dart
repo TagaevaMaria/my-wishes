@@ -51,7 +51,9 @@ class ScreenGosha extends StatelessWidget {
                 padding: EdgeInsets.only(bottom: 10),
                 child: YourHookah(),
               ),
-              CancelOrder(cancel: CancelOrderModel(cancel: 'fgfgfggfjdjd')),
+              CancelOrder(
+                cancel: CancelOrderModel(cancel: 'fgfgfggfjdjd'),
+              ),
             ],
           ),
         ),
