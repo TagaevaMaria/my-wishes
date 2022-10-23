@@ -1,3 +1,4 @@
+import 'package:dev_two/ui/navigation/main_navigation.dart';
 import 'package:flutter/material.dart';
 
 class MenuWidget extends StatelessWidget {
@@ -21,12 +22,15 @@ class MenuWidget extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: Text('Мой профиль', style: const TextStyle(fontSize: 25)),
+              title: const Text('Мой профиль', style: TextStyle(fontSize: 25)),
               onTap: () {},
             ),
             ListTile(
               title: const Text('Фото мечты', style: TextStyle(fontSize: 25)),
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context)
+                    .pushNamed(MainNavigationRoutsName.AddFotoWidget);
+              },
             ),
             ListTile(
               title: const Text('Аффирмации', style: TextStyle(fontSize: 25)),
@@ -35,13 +39,15 @@ class MenuWidget extends StatelessWidget {
             ListTile(
               title: const Text('Заметки', style: TextStyle(fontSize: 25)),
               onTap: () {
-                Navigator.of(context).pushNamed('/NotesWidget');
+                Navigator.of(context)
+                    .pushNamed(MainNavigationRoutsName.NotesWidget);
               },
             ),
             ListTile(
               title: const Text('ГОША', style: TextStyle(fontSize: 25)),
               onTap: () {
-                Navigator.of(context).pushNamed('/ScreenGosha');
+                Navigator.of(context)
+                    .pushNamed(MainNavigationRoutsName.ScreenGosha);
               },
             ),
           ],

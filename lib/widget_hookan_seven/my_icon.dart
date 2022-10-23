@@ -15,8 +15,8 @@ class MyButtonstBowl extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: size.height,
-            width: size.width,
+            height: size.height / 10,
+            width: size.width / 10,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(myBorderRadius),
               color: Colors.white70,
@@ -44,8 +44,8 @@ class MyButtonstWater extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: size.height,
-            width: size.width,
+            height: size.height / 10,
+            width: size.width / 10,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(myBorderRadius),
               color: Colors.white70,
@@ -74,8 +74,8 @@ class MyButtonstStandard extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: size.height,
-            width: size.width,
+            height: size.height / 10,
+            width: size.width / 10,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(myBorderRadius),
               color: Colors.white70,
@@ -104,8 +104,8 @@ class MyButtonstFortress extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: size.height,
-            width: size.width,
+            height: size.height / 10,
+            width: size.width / 10,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(myBorderRadius),
               color: Colors.white70,

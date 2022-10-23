@@ -36,8 +36,8 @@ class ScreenGosha extends StatelessWidget {
                           "https://down.imgspng.com/download/0720/qr_code_PNG15.png"),
                     ),
                   ),
-                  height: size.width,
-                  width: size.width,
+                  height: size.width / 2,
+                  width: size.width / 2,
                 ),
               ),
               Padding(
@@ -122,8 +122,8 @@ class HookanSevenWidget extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5), color: Colors.white70),
-      height: size.width,
-      width: size.height,
+      height: size.width / 2,
+      width: size.height / 2,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -236,124 +236,130 @@ class YourHookah extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final YourHookahModel YourHooka;
-    return Container(
-      height: size.height,
-      width: size.width,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(5), color: Colors.white70),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: const [
-              Padding(
-                padding: EdgeInsets.only(left: 30),
-                child: Text('Твой кольян'),
-              ),
-              Padding(
-                padding: EdgeInsets.only(left: 180),
-                child: Icon(Icons.favorite),
-              ),
-            ],
-          ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Divider(
-                height: 10,
-                thickness: 1,
-                indent: 30,
-                endIndent: 30,
-                color: Colors.grey[20],
-              ),
-              Center(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    MyButtonstBowl(),
-                    MyButtonstWater(),
-                    MyButtonstStandard(),
-                    MyButtonstFortress(),
-                  ],
+    return Padding(
+      padding: const EdgeInsets.all(10),
+      child: Container(
+        height: size.height / 3,
+        width: size.width,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5), color: Colors.white70),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: const [
+                Padding(
+                  padding: EdgeInsets.only(left: 30),
+                  child: Text('Твой кольян'),
                 ),
-              ),
-              Divider(
-                height: 10,
-                thickness: 1,
-                indent: 30,
-                endIndent: 30,
-                color: Colors.grey[20],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  const Text(
-                    'Пожелания по вкусу',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  Row(
+                Padding(
+                  padding: EdgeInsets.only(left: 180),
+                  child: Icon(Icons.favorite),
+                ),
+              ],
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Divider(
+                  height: 10,
+                  thickness: 1,
+                  indent: 30,
+                  endIndent: 30,
+                  color: Colors.grey[20],
+                ),
+                Center(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Padding(
-                        padding: EdgeInsets.all(2.0),
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(primary: Colors.grey),
-                          onPressed: () {},
-                          child: const Text(
-                            'Ягодный',
-                            style: TextStyle(fontSize: 12),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(2.0),
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(primary: Colors.grey),
-                          onPressed: () {},
-                          child: const Text(
-                            'Цитрусовый',
-                            style: TextStyle(fontSize: 12),
-                          ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.all(2.0),
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(primary: Colors.grey),
-                          onPressed: () {},
-                          child: const Text(
-                            'Добавить мяту',
-                            style: TextStyle(fontSize: 12),
-                          ),
-                        ),
-                      ),
+                    children: const [
+                      MyButtonstBowl(),
+                      MyButtonstWater(),
+                      MyButtonstStandard(),
+                      MyButtonstFortress(),
                     ],
                   ),
-                  Divider(
-                    height: 10,
-                    thickness: 1,
-                    indent: 30,
-                    endIndent: 30,
-                    color: Colors.grey[20],
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 10, left: 10),
-                    child: Row(
-                      children: const [
-                        Text('Цена',
-                            style: TextStyle(fontWeight: FontWeight.bold)),
+                ),
+                Divider(
+                  height: 10,
+                  thickness: 1,
+                  indent: 30,
+                  endIndent: 30,
+                  color: Colors.grey[20],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Пожелания по вкусу',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
                         Padding(
-                          padding: EdgeInsets.only(left: 210),
-                          child: Text('4360 р'),
-                        )
+                          padding: EdgeInsets.all(2.0),
+                          child: ElevatedButton(
+                            style:
+                                ElevatedButton.styleFrom(primary: Colors.grey),
+                            onPressed: () {},
+                            child: const Text(
+                              'Ягодный',
+                              style: TextStyle(fontSize: 12),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(2.0),
+                          child: ElevatedButton(
+                            style:
+                                ElevatedButton.styleFrom(primary: Colors.grey),
+                            onPressed: () {},
+                            child: const Text(
+                              'Цитрусовый',
+                              style: TextStyle(fontSize: 12),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(2.0),
+                          child: ElevatedButton(
+                            style:
+                                ElevatedButton.styleFrom(primary: Colors.grey),
+                            onPressed: () {},
+                            child: const Text(
+                              'Добавить мяту',
+                              style: TextStyle(fontSize: 12),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
-                  )
-                ],
-              )
-            ],
-          )
-        ],
+                    Divider(
+                      height: 10,
+                      thickness: 1,
+                      indent: 30,
+                      endIndent: 30,
+                      color: Colors.grey[20],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 10, left: 10),
+                      child: Row(
+                        children: const [
+                          Text('Цена',
+                              style: TextStyle(fontWeight: FontWeight.bold)),
+                          Padding(
+                            padding: EdgeInsets.only(left: 210),
+                            child: Text('4360 р'),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
